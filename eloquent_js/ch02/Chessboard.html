@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <p>2.3 Chessboard</p>   
+</body>
+<script>
+
+let size = 8; //change size to get size*size grid,
+let grid = size*size;
+let chess_board = "";    
+let block = " " ;
+
+chess_board += block;
+
+// debugger;
+
+for(let i=1; i<grid; i++){
+    
+    if(i%size === 0){
+        
+        chess_board += "\n";
+        chess_board += block;
+        continue;
+    }
+    
+
+    if(block === " "){
+        block = "#";
+        chess_board += block;
+    }else{
+        block = " "
+        chess_board += block;
+    }
+
+    
+    
+    
+}
+
+console.log(chess_board);
+
+</script>
+</html>
+
